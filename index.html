@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain Adventure Game</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="midproject.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   
+    <div class="mainHeading">
+      <h2 class="mogra-regular">Mountain Adventures</h2>
+    </div>
+    <div class="container">
+        <div>
+            <img src="312323.jpg" alt="island" class="basicImg "></img>
+        </div>
+        <div class="basicStory">
+            <p class="mogra-regular">
+                Embark on an exhilarating journey through treacherous peaks and breathtaking vistas in "Mountain Adventures." Navigate through rugged terrain, facing daunting challenges and thrilling encounters along the way. Your choices will determine your fate as you forge your path through the wilderness. Will you conquer the summit and claim victory, or will you succumb to the dangers that lurk amidst the towering peaks? Prepare for an epic adventure filled with excitement, danger, and the awe-inspiring beauty of the mountains.
+            </p>
+            <button class="startGame">Start Game</button>
+        </div>
+    </div>
+    <div class="basicGame hidden" id="updateConsole">
+      <button class="close-modal">End Game</button>
+      <h3>Welcome to game console</h3>
+      <p id="updateConsole">
+        <!-- This is the user friendly game console here you can select any of the opitons. -->
+      </p>
+      <label>Here are few games you can select: </label>
+      <select id="gameOptions">
+            <option value="rockClimbing">Rock Climbing</option>
+            <option value="mtnBiking">Mountain Biking</option>
+            <option value="snowBoarding">Snowboarding</option>
+            <option value="paragliding">Paragliding</option>
+      </select>
+
+        <div id="dialogBox">
+            <p></p>
+            <!-- <p id="moreText" class="hidden">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at felis nec justo efficitur elementum. Vivamus sit amet purus quam.</p> -->
+            <p id="moreText" class="hidden">Experience thrilling virtual adventures of alpine exploration while embarking on mountain quests and conquering peaks.</p>
+            
+            <img id="dialogImage" src="#" alt="Dialog Image">
+            <button id="readMoreBtn">Read More</button>
+        </div>
+
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+  <footer>
+    <div class="addendum">
+        <h3>Addendum: </h3>
+        <ul>
+          <li>
+            1. For this Mid-Term-Project I choosen a Mountain Adventures Game.
+          </li>
+          <li>
+            2. On its initial page we get the entire description of the Mountain Adventure Games and there is a button called a "Start Game".
+          </li>
+          <li>
+            3. After clicking that "Start Game" button we will get a dialog box that showing the game console in that there is a drop-down list where you can select what ever game you want, In addition to that there is "End Game" button by clicking that you will exit from the game and you can see the initial web page as when you are starting the Game.
+          </li>
+          <li>
+            4. Then, there are creative choices in form of multiple options as drop-down list like "Rock Climbing", "Mountain Biking", "Snowboarding" and "Paragliding" as shown once you click then you will get the related story on the left side  with an image displaying on its right side, and also the entire page will get updated with the related game option.
+          </li>
+          <li>
+            5. Next, there is a "Read More" button, by clicking that you will get an extra hidden information and after that you can see the "Read Less" by clicking that you will see the information as in initial form as you seen before clicking the "Read More" button.
+          </li>
+          <li>
+            6. There is one difficulty that at initial stage after selecting the option from the drop down list there is an problem I faced with loading image and story of that game due to backend connectivity. 
+          </li>
+          <li>
+            7. That issues has resolved by selecting another option and returing back to the orginal option you can see the actual result.
+          </li>
+        </ul> 
+      </div>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+  </footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</html>
